@@ -1,0 +1,9 @@
+:root { color-scheme: light dark; --bg: #fbfaf7; --fg: #1f2328; --muted: #59636e; --line: #d8dee4; }
+@media (prefers-color-scheme: dark) { :root { --bg: #16181c; --fg: #e6e8eb; --muted: #9aa4b0; --line: #30363d; } }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.75 system-ui, "Hiragino Sans", "Yu Gothic UI", sans-serif; }
+main { max-width: 42rem; margin: 0 auto; padding: 2.5rem 1rem 4rem; }
+h1 { font-size: 1.6rem; margin: 0 0 .25rem; }
+h2 { font-size: 1.1rem; margin-top: 2rem; border-bottom: 1px solid var(--line); padding-bottom: .25rem; }
+p.lead, .meta { color: var(--muted); }
+a { color: inherit; }
+hr { border: 0; border-top: 1px solid var(--line); margin: 3rem 0 2rem; }
