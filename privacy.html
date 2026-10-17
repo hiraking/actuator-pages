@@ -9,10 +9,10 @@
 <body>
 <main>
 <h1>プライバシーポリシー</h1>
-<p class="meta">actuator ／ 制定日：2026年10月15日 ／ <a href="./">トップへ</a></p>
+<p class="meta">actuator ／ 制定日：2026年10月15日 ／ 改定日：2026年10月17日（ブラウザの拡張機能を追加） ／ <a href="./">トップへ</a></p>
 
 <h2>対象</h2>
-<p>actuator は開発者が自分ひとりで使う個人用のアプリです。Google のアカウントを接続するのは開発者本人だけで、ほかの人のデータは扱いません。</p>
+<p>actuator は開発者が自分ひとりで使う個人用のアプリです。Google のアカウントを接続するのも、ブラウザの拡張機能を登録するのも開発者本人だけで、ほかの人のデータは扱いません。</p>
 
 <h2>Google から受け取るデータ</h2>
 <p>許可の範囲は <code>https://www.googleapis.com/auth/calendar.events.readonly</code>（予定の読み取りだけ）です。Google Calendar API から、次の項目だけを受け取ります。</p>
@@ -42,16 +42,26 @@
 <h2>アクセスの取り消し</h2>
 <p><a href="https://myaccount.google.com/connections">Google アカウントのサードパーティとの接続</a> から、いつでも actuator のアクセスを取り消せます。取り消すと、actuator は予定を読めなくなります。</p>
 
+<h2 id="extension">ブラウザの拡張機能</h2>
+<p>actuator のブラウザの拡張機能（Chrome ウェブストア・Edge アドオン）は、開発者本人の予約の間に、本人が決めたサイトを開けないようにするための道具です。</p>
+<ul>
+<li>扱うのは、登録のトークン、本人が指定した actuator のサーバーの URL、そのサーバーから受け取る予約と止めるサイトの一覧だけです。どれもブラウザの中（<code>chrome.storage.local</code>）にだけ置きます</li>
+<li>通信するのは、登録のときに本人が指定した actuator のサーバーだけです。トークンはそのサーバーへの問い合わせにだけ使います</li>
+<li>閲覧の履歴、開いたページの URL や中身、入力した文字は集めず、どこにも送りません。止めた・開けなかったという記録も送りません</li>
+<li>広告・分析・第三者のサービスは使いません</li>
+<li>拡張機能を外すと、ブラウザの中に置いた情報はすべて消えます</li>
+</ul>
+
 <h2>連絡先</h2>
 <p><a href="https://github.com/hiraking/actuator-pages/issues">GitHub の Issues</a></p>
 
 <hr>
 
 <h1>Privacy Policy</h1>
-<p class="meta">actuator / Effective: October 15, 2026</p>
+<p class="meta">actuator / Effective: October 15, 2026 / Updated: October 17, 2026 (browser extension added)</p>
 
 <h2>Scope</h2>
-<p>actuator is a personal app used only by its developer. Only the developer connects their own Google account; no other person's data is handled.</p>
+<p>actuator is a personal app used only by its developer. Only the developer connects their own Google account and pairs the browser extension; no other person's data is handled.</p>
 
 <h2>Data received from Google</h2>
 <p>The only scope requested is <code>https://www.googleapis.com/auth/calendar.events.readonly</code>. From the Google Calendar API, actuator receives only:</p>
@@ -80,6 +90,16 @@
 
 <h2>Revoking access</h2>
 <p>Access can be revoked at any time from <a href="https://myaccount.google.com/connections">Google Account third-party connections</a>.</p>
+
+<h2 id="extension-en">Browser extension</h2>
+<p>The actuator browser extension (Chrome Web Store and Edge Add-ons) blocks sites chosen by the developer during the developer's own scheduled work blocks.</p>
+<ul>
+<li>It handles only a pairing token, the URL of the actuator server specified by the user, and the schedule and blocked-site list received from that server. All of these are kept only inside the browser (<code>chrome.storage.local</code>).</li>
+<li>It communicates only with the actuator server specified at pairing. The token is used only for requests to that server.</li>
+<li>It does not collect or transmit browsing history, visited URLs, page content, or typed input. It does not report blocking events.</li>
+<li>It uses no advertising, analytics, or third-party services.</li>
+<li>Removing the extension deletes all data it stored in the browser.</li>
+</ul>
 
 <h2>Contact</h2>
 <p><a href="https://github.com/hiraking/actuator-pages/issues">GitHub Issues</a></p>
